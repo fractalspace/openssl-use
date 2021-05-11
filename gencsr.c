@@ -1,5 +1,25 @@
 //https://www.dynamsoft.com/codepool/how-to-use-openssl-to-generate-x-509-certificate-request.html
 //Generate CSR using OpenSSL APIs
+/*
+Certificate signing request is a message sent from an applicant to a certificate authority, which usually includes:
+
+    Country Name (2 letter code) [US]
+    State or Province Name (full name) [BC]
+    Locality Name (e.g., city) [Vancouver]
+    Organization Name (e.g., company) [My Company Ltd]
+    Organizational Unit Name (e.g., section)
+    Common Name (e.g., your name or your server’s hostname)
+    Email Address
+
+Implementation Steps:
+
+    Generate RSA key
+    Set version
+    Set subject
+    Set public key
+    Set sign key
+    Free
+*/
 
 #include <stdio.h>
 #include <iostream>
